@@ -236,6 +236,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+<<<<<<< HEAD
 
 /* Add cursor pointer to buttons by default - this is coming from tailwind docs */
 @layer base {
@@ -244,3 +245,5 @@ body {
     cursor: pointer;
   }
 }
+=======
+>>>>>>> 8aaf2ec11e6722b0c76e77de57dbef42a20cd8cd
