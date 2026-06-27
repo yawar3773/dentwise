@@ -1,36 +1,202 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦷 DentiWise
 
-## Getting Started
+DentiWise is a modern dentist appointment booking platform that allows patients to easily schedule appointments with dentists through an intuitive interface. The application also features an AI-powered voice assistant using Vapi for conversational appointment booking and an admin dashboard for managing doctors and appointments.
 
-First, run the development server:
+---
+
+![Home](assets/home.png) 
+
+## 🚀 Features
+
+### 👨‍⚕️ Patient Features
+
+- Secure authentication with Clerk
+- Browse available dentists
+- View detailed doctor profiles
+- Book appointments with preferred doctors
+- Select convenient date and time slots
+- Manage upcoming appointments
+- AI-powered voice booking using Vapi
+- Appointment confirmation and notification emails via Resend
+- Subscription plans for premium features
+- Responsive interface optimized for desktop and mobile devices
+
+![Login](assets/login.png) 
+![Dashboard](assets/dashboard.png)
+![book](assets/book.png)  
+![Voice](assets/voice.png) 
+![Voice](assets/voice1.png) 
+
+### 🛠️ Admin Features
+
+- Secure admin dashboard
+- Add, edit, and remove doctors
+- Manage appointments and schedules
+- Track booking status
+- Manage doctor availability
+- Monitor patient subscriptions
+
+![Admin](assets/admin.png) 
+![Admin](assets/admin2.png) 
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Shadcn UI
+
+### Backend
+
+- Next.js API Routes
+- Prisma ORM
+
+### Database
+
+- PostgreSQL
+
+### Authentication
+
+- Clerk Authentication
+
+### AI & Voice
+
+- Vapi AI Voice Assistant
+
+### Email Service
+
+- Resend
+
+### Subscription Management
+
+- Subscription Plans
+
+### Deployment
+
+- Vercel
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yawar3773/dentiwise.git
+```
+
+Move into the project
+
+```bash
+cd dentiwise
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env` file
+
+```env
+DATABASE_URL=
+NEXT_PUBLIC_APP_URL=
+CLERK_SECRET_KEY
+RESEND_API_KEY=
+ADMIN_EMAIL
+NEXT_PUBLIC_VAPI_API_KEY=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+
+# Add other required environment variables
+```
+
+Run Prisma migrations
+
+```bash
+npx prisma migrate dev
+```
+
+Generate Prisma Client
+
+```bash
+npx prisma generate
+```
+
+Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💡 How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. User browses available dentists.
+2. Selects a preferred doctor.
+3. Chooses a suitable appointment slot.
+4. Confirms the booking.
+5. Users can also interact with the AI Voice Assistant to book appointments conversationally.
+6. Admin manages doctors and appointments from the dashboard.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔮 Future Improvements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Payment Gateway Integration
+- Email Notifications
+- SMS Appointment Reminders
+- Google Calendar Integration
+- Video Consultation Support
+- Patient Medical History
+- Doctor Availability Calendar
+- Appointment Analytics Dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📦 Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run dev       # Development server
+npm run build     # Production build
+npm run start     # Start production server
+npm run lint      # Run ESLint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push your branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+
+## 👨‍💻 Author
+
+Developed by **Mohd Yawar**
+
+If you found this project helpful, consider giving it a ⭐ on GitHub!
